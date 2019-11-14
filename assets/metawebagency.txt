@@ -1,0 +1,4 @@
+<meta name="author" content="DWWM 2 team" />
+<meta name="copyright" content="20199-2022" />
+<meta name="news_keywords" content="développement Web et Web mobile, afpa, services, programmation">
+<meta name="diescription" content"Faites Présentation du site Web mis en place par la formation DWWM 2 centre AFPA la valette session 2019-2020"
