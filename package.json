@@ -1,0 +1,20 @@
+{
+  "name": "web-agency",
+  "version": "1.0.0",
+  "description": "Un projet en deux parties distinctes à réaliser en simultané :\r - Landing Page\r - Système de partage d'informations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/formation-dwwm/web-agency.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/formation-dwwm/web-agency/issues"
+  },
+  "homepage": "https://github.com/formation-dwwm/web-agency#readme"
+}
