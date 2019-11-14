@@ -6,3 +6,24 @@ root{
     --info: #c68f0c;
     --dark: #28252f;
 }
+
+.bg-dark{
+    background: var(--dark);
+}
+
+.bg-secondary{
+    background: var(--secondary);
+}
+
+.bg-primary{
+    background: var(--primary);
+}
+
+.nv-link{
+    color: var(--danger);
+}
+
+.btn-info{
+    background: var(--info);
+}
+
