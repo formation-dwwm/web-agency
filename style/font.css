@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body{
+    font-family: 'lato', sans-serif;
+}
+
+@media screen and (max-width: 640px){
+    
+    body{
+        font-size: 20px;
+    }
+    
+    h1{
+        font-size: 36px;
+    }
+
+    h2{
+        font-size: 24px;
+    }
+
+}
