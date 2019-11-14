@@ -1,0 +1,33 @@
+{% for elt in site.services %} 
+  
+    <div class="card col-12 col-md-3" style="width: 8rem;">
+        <img src="" class="" alt="{{ elt.title }}"></a>
+        <div class="card-body">
+            <p class="card-title h2">{{ elt.title }}</p>
+            <p class="card-text h3">
+                {{ elt.excer }}<br>
+            </p>
+        </div>
+    </div>
+{% endfor %}
+    
+    <!-- fond d'ecran svg -->
+    
+{% assign ficImg = post.url | split: "." | first | replace: "/", "-" | remove_first: "-" | append: ".jpg" | prepend: "assets/images/" %}
+
+<svg width="272" height="124" viewBox="0 0 272 124" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#filter0_d)">
+        <path d="M14.4982 1.02247C14.4982 1.02247 98.486 91.6177 186.473 22.4269C274.46 -46.764 269.961 66.2311 269.961 66.2311V118H146.979H2C2 118 49.993 72.2045 24.4967 39.3512C-0.999564 6.49797 14.4982 1.02247 14.4982 1.02247Z" fill="#C68F0C"/>
+    </g>
+    <defs>
+        <filter id="filter0_d" x="0" y="0" width="272" height="124" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+            <feOffset dy="4"/>
+            <feGaussianBlur stdDeviation="1"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+        </filter>
+    </defs>
+</svg>
