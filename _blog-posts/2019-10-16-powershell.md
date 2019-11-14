@@ -1,3 +1,13 @@
+---
+layout: blog-post
+title:  "POWERSHELL"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+date:   2019-10-16 10:00:00 +0200
+author: 
+category: 
+tags:
+---
+
 # POWERSHELL: Langage de Script/ Windows 
 
 > PowerShell est un interpréteur de ligne de commande et langage de script qui repose sur la technologie .NET. 
@@ -25,10 +35,6 @@ Dans ISE, vous pouvez `exécuter` des commandes et `écrire`, `tester` et `débo
 2 méthodes:
 1. Cliquer sur démarrer > Windows PowerShell > PowerShell ISE
 2. Dans la barre de recherche ou CLI > taper: powershell_ise.exe
-
-## Exemple de Script
-
-![Exemple de script](Capture.PNG) 
 
 [**Cours de Powershell par OpenClassroom**](https://openclassrooms.com/fr/courses/3664366-creez-votre-premier-script-avec-powershell)
 
