@@ -1,11 +1,12 @@
 ---
 layout: blog-post
-title:  "POWERSHELL"
+title:  "Powershell"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 date:   2019-10-16 10:00:00 +0200
-author: 
+author: McDoughnut
 category: 
-tags:
+tags: 
+cover_url: https://static.makeuseof.com/wp-content/uploads/2014/12/basic-powershell-commands-intro-670x335.png
 ---
 
 # POWERSHELL: Langage de Script/ Windows 

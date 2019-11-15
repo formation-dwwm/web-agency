@@ -2,4 +2,34 @@
 layout: blog-default
 ---
 
-<p>Blog home page is working!</p>
+<div class="container">
+    <div class="row">
+        {%- for article in site.articles -%}
+
+        <div class="card col-12 mt-3 mb-3" style="width: 18rem;">
+
+            {% if article.cover_url %}
+            <img src="{{ article.cover_url | relative_url }}" class="card-img-top"
+                alt="{{ article.title | escape }} article-cover-image">
+            {% endif %}
+
+            <div class="card-body">
+                <h5 class="card-title">{{ article.title | escape }}</h5>
+                <p class="card-text">{{ article.description | escape }}</p>
+                <!-- <p>{{ article.date | escape }}</p> -->
+                <p class="post-meta">
+                    <time class="dt-published" datetime="{{ article.date | date_to_xmlschema }}" itemprop="datePublished">
+                      {%- assign date_format = article.minima.date_format | default: "%b %-d, %Y" -%}
+                      {{ article.date | date: date_format }}
+                    </time>
+                    {%- if article.author -%}
+                      • by: <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ article.author | escape }}</span></span>
+                    {%- endif -%}
+                </p>
+            </div>
+        </div>
+
+        {%- endfor -%}
+
+    </div>
+</div>
