@@ -1,0 +1,5 @@
+---
+title: Eric
+excer: ricou
+---
+
