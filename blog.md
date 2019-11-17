@@ -1,3 +1,3 @@
 ---
-layout: blog
+layout: blog-home
 ---
