@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 
-<svg width="272" height="124" viewBox="0 0 272 124" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="352" height="125" viewBox="0 0 352 125" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="352" height="125" fill="#C4C4C4" fill-opacity="0"/>
     <g filter="url(#filter0_d)">
-        <path d="M14.4982 1.02247C14.4982 1.02247 98.486 91.6177 186.473 22.4269C274.46 -46.764 269.961 66.2311 269.961 66.2311V118H146.979H2C2 118 49.993 72.2045 24.4967 39.3512C-0.999564 6.49797 14.4982 1.02247 14.4982 1.02247Z" fill="#C68F0C"/>
+        <path d="M91.4982 1.02247C91.4982 1.02247 175.486 91.6177 263.473 22.4268C351.46 -46.764 346.961 66.2311 346.961 66.2311V118H223.979H79C79 118 126.993 72.2045 101.497 39.3512C76.0004 6.49797 91.4982 1.02247 91.4982 1.02247Z" fill="#C68F0C"/>
     </g>
     <defs>
-        <filter id="filter0_d" x="0" y="0" width="272" height="124" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <filter id="filter0_d" x="77" y="0" width="272" height="124" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
             <feFlood flood-opacity="0" result="BackgroundImageFix"/>
             <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
             <feOffset dy="4"/>

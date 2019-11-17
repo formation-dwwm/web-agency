@@ -4,7 +4,12 @@
 
 <body>
   {%- include navbar.html -%}
-    {{ content }}
+  
+  <div class="container">
+    <div class="row">
+      {%- include card.html -%}
+    </div>
+  </div>
   {%- include footer.html -%}
 
 <!-- Lien vers CDN -->

@@ -1,0 +1,7 @@
+.bgImage {
+    display: block;
+    background: url(/assets/img/bgCard.svg) no-repeat bottom right;
+    background-size: contain;
+    /* width: 80%; */
+    /* height: 100%px; */
+}

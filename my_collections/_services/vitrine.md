@@ -1,6 +1,6 @@
 ---
 title: Vitrine
 excer:  Landing pages, web statique
-layout: default
 ---
 
+We can use jekyll technologie to generate such pages
