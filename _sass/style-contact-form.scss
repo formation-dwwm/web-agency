@@ -1,0 +1,23 @@
+
+#after_submit {
+    color: grey bold; ;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+form {
+    box-sizing: border-box;
+    background-image: url("../assets/image11.png");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #C68F0C;
+}
+
+#submit_button {
+    font-family: 'Lato', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #FF9A19;
+    color: white;
+
+}

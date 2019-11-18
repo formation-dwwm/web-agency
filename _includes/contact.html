@@ -1,0 +1,24 @@
+{% comment %} Needed for integration waiting for sass merge... {% endcomment %}
+{% comment %} TODO: Remove from this include and link from main.sass {% endcomment %}
+<link rel="stylesheet" type="text/css" href="{{ "assets/main.css" | relative_url }}"></link>
+{% comment %} End TODO {% endcomment %}
+
+<div id="after_submit">CONTACT</div>
+<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+<div class="container">
+  <div class="row">
+  <div class="col-12">
+    <label class="required" for="name">votre nom:</label><br />
+    <input id="name" class="input" name="name" type="text" value="" size="40" /><br />
+    <span id="name_validation" class="error_message"></span>
+    <label class="required" for="email">votre email:</label><br />
+    <input id="email" class="input" name="email" type="text" value="" size="40" /><br />
+    <span id="email_validation" class="error_message"></span>
+    <label class="required" for="message">votre message:</label><br />
+    <textarea id="message" class="input" name="message" rows="9" cols="40"></textarea><br />
+    <span id="message_validation" class="error_message"></span>
+    </div>
+  </div>
+    </div>
+    <input id="submit_button" type="submit" value="Send email" />
+</form>
