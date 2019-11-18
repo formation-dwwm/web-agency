@@ -5,6 +5,12 @@
 <body>
   {%- include navbar.html -%}
     {{ content }}
+    
+{% comment %} For debug purposes {% endcomment %}
+{% comment %} TODO: REMOVE {% endcomment %}
+{%- include contactbox.html -%}
+{% comment %} End TODO {% endcomment %}
+
   {%- include footer.html -%}
 
 <!-- Lien vers CDN -->
