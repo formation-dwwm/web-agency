@@ -10,7 +10,7 @@
 .jumbo {
     overflow: hidden;
     height:100vh;
-    background-image: url("./../assets/img/Background/BgJumbo.jpg");
+    background-image: url($jumboBackgroundLink);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,7 +18,7 @@
 
 .bg-darkness{
     height: 100vh;
-    background-color: #00000050;
+    background-color: #00000080;
 }
 
 .btn-geant{

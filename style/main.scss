@@ -1,7 +1,8 @@
 ---
-
+# auto-generate css
 ---
 
+$jumboBackgroundLink: "{{"./assets/img/Background/BgJumbo.jpg" | relative_url}}";
 @import "minima";
 @import "colors";
 @import "navbar";

@@ -1,8 +1,9 @@
 
 #after_submit {
-    color: grey bold; ;
+    color: grey bold;      
     font-size: 2.5em;
     text-align: center;
+    background-color: rgba(49, 43, 43, 0.26);
 }
 
 .contact {
@@ -13,6 +14,7 @@
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #C68F0C;
+    
 }
 
 #submit_button {
