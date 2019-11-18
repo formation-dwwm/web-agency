@@ -1,0 +1,9 @@
+<div class="container">
+
+    <div class="row">
+        {%- for elt in site.services -%}
+        {% include card.html title=elt.title excer=elt.excer content=elt.content %}
+        {%- endfor -%}
+    </div>
+
+</div>

@@ -1,0 +1,7 @@
+<div class="container">
+    <div class="row">
+        {% for team in site.staff_members %}
+        {% include card.html title=team.title excer=team.excer content=team.content %}
+        {% endfor %}
+    </div>
+</div>

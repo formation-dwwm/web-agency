@@ -1,7 +1,9 @@
 .bgImage {
     display: block;
-    background: url(/assets/img/bgCard.svg) no-repeat bottom right;
-    background-size: contain;
-    /* width: 80%; */
-    /* height: 100%px; */
+    background: url(../assets/img/bgCard.svg) no-repeat bottom right;
+    // bottom right;
+    // background-image: url(../assets/img/bgCard.svg);
+    background-size: auto auto;
+    width: 100%;
+    height: 100%;
 }

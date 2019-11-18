@@ -1,4 +1,4 @@
 ---
 title: Abdallah
-excer: ezphyr
+excer: zephyr
 ---

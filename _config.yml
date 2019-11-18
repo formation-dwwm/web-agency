@@ -30,7 +30,6 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Collections
-collections_dir: my_collections
 
 collections:
   services:
