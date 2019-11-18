@@ -8,7 +8,7 @@
 
 .contact {
     box-sizing: border-box;
-    background-image: url("../assets/image11.png");
+    background-image: url($contactLink);
     background-position: center;
     background-size: cover;
     text-align: center;
