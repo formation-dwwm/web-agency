@@ -1,0 +1,29 @@
+---
+---
+
+.bg-jumbo {
+    filter: brightness(0.5);
+    top: 1;
+    right: 1;
+    bottom: 1;
+    left: 1;
+}
+
+.jumbo {
+    overflow: hidden;
+    height:100vh;
+    background-image: url({{"assets/img/Background/BgJumbo.jpg" | relative_url}});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-darkness{
+    height: 100vh;
+    background-color: #00000050;
+}
+
+.btn-geant{
+    padding: 0.5rem 3rem;
+    font-size: 3rem;
+}
