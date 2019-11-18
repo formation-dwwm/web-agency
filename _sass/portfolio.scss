@@ -1,0 +1,40 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 4fr 1fr 0.5fr;
+  grid-template-areas: "title""photo""text""button";
+  width: 100%;
+  height: calc(100vh - 100px);
+}
+
+@media screen and (min-width: 768px) {
+  .w-md-30 {
+    width: calc(100% / 3);
+  }
+}
+
+.centerV {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.center {
+  margin: auto;
+}
+
+.title {
+  grid-area: title;
+}
+
+.photo {
+  grid-area: photo;
+  margin: auto;
+}
+
+.text {
+  grid-area: text;
+}
+
+.button {
+  grid-area: button;
+}
