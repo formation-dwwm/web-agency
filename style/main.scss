@@ -7,5 +7,6 @@
 @import "navbar";
 @import "jumbo";
 @import "style-contact-form";
-@import "blog-style";
 @import "bootstrap-src/bootstrap";
+/* Important: this needs to be imported AFTER bootstrap (overrides) */
+@import "blog-style";
