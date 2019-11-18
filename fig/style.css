@@ -4,40 +4,27 @@
     margin-top: 10%;
     margin-bottom: 10%;
     position: relative;
+    word-wrap: normal;
 }
 
 .ellipse img{
     border-radius: 40%;
-    width: 100px;
+    width: 250px;
     background: rgb(219, 219, 213);
     box-shadow: 0 2px 2px 2px rgb(172, 172, 171);
-    height: 80px;
-    float: left;
+    height: 150px;
+    margin: auto;
 }
 
-.ellipse::before{
+.line::before{
     content:'';
     position: absolute;
-    top: 80px;
-    left: 46px;
+    top: 150px;
+    left: calc(50vw - 20px);
     background: rgb(219, 219, 213);
-    height: calc(100% + 10px);
+    height: calc(100% + 200px);
     width: 4px;
 }
-
-.ellipse:last-child::before{
-    background: white;
-}
-
-/* .ellipse::after{
-    content:'';
-    position: absolute;
-    top: 80px;
-    left: 46px;
-    background: rgb(219, 219, 213);
-    height: calc(100% + 10px);
-    width: 4px;
-} */
 
 .box{
     height: 100vh;
@@ -53,14 +40,51 @@ h1{
 }
 
 h2{
-    float: right;
     font-size: 24px;
     margin: 1%;
-    border-top: 1px solid #333;
 }
 
 p{
-    float: right;
     font-size: 18px;
-    width: calc(25vw - 10px);
+    /* width: calc(25vw - 10px); */
+}
+
+.ellipse .aLeft{
+    text-align: left;
+}
+
+.ellipse .aRight{
+    text-align: right;
+}
+
+@media screen and (max-width: 764px){
+    .ellipse{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .aRight{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        word-wrap: break-word;
+        width: 100%;
+    }
+
+    .aLeft{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        word-wrap: break-word;
+        width: 200px;
+}
+
+.aRight p{
+    width: 200px;
+}
+
+.aLeft h2{
+    width: 200px;
 }
