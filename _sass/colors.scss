@@ -7,4 +7,7 @@ $theme-colors: (
   "dark": #28252f
 );
 
+@function color($colorName){
+  @return map-get($theme-colors, $colorName);
+}
 

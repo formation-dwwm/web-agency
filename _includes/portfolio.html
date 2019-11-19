@@ -1,93 +1,57 @@
-
-<div class="container-fluid">
+<div class="portfolio container-fluid">
     <p class= "text-center" id="portfolio">PORTFOLIO</p>
     <div class="container-fluid row m-0">
         <div class="grid-container grid-container-md col-12 col-md-4">
-            <h2 class= "text-center title centerV" >Charte de fonctionnement</h2>
+            <h2 class= "title text-center centerV" >Charte de fonctionnement</h2>
                 <img class="img-fluid photo" src="assets/img/charte.svg" alt="Charte">
                 <p class="text-center text centerV d-none d-md-inline-block">Création d’un site graphique.<br> Présente les différentes règles de la charte
                 de fonctionnement de la formation de développeur web de l’AFPA.</p>
-                    <a class="btn btn-warning button center d-none d-md-inline-block" href="https://lisplib.github.io/charte-dwwm-v2/" target="_blank">voir le site</a>
-                    <a class="btn btn-warning button center d-inline-block d-md-none"data-toggle="modal" data-target="#exampleModal">plus d'infos</a>
+                    <a class="btn btn-outline-info button center d-none d-md-inline-block" href="https://lisplib.github.io/charte-dwwm-v2/" target="_blank">voir le site</a>
+                    <a class="btn btn-outline-info center d-inline-block d-md-none"data-toggle="modal" data-target="#exampleModal">plus d'infos</a>
                           <!-- Modal -->
-                          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLabel">Charte de fonctionnement</h5>
-                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                  </button>
-                                </div>
-                                <div class="text-center"class="modal-body">
-                                        Création d’un site web statique
-                                        Présente les différentes règles de la charte de fonctionnement de la formation de développeur web de l’AFPA 
-                                </div>
-                                <a class="text-center" target="_blank" href="https://lisplib.github.io/charte-dwwm-v2/" >https://lisplib.github.io/charte-dwwm-v2/</a>
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                         {% include modal.html
+                              label="exampleModal"
+                              title="Charte de fonctionnement"
+                              text= "Création d’un site web statique.<br>
+                              Présente les différentes règles de la charte de fonctionnement de la formation de développeur web de l’AFPA"
+                              link="https://lisplib.github.io/charte-dwwm-v2/"
+                              img="assets/img/CHARTE.png"
+                              description="charte de fonctionnement" %}
         </div>
         <div class="grid-container grid-container-md col-12 col-md-4">
             <h2 class= "text-center title centerV">Calculette graphique</h2>
                 <img class="img-fluid photo" src="assets/img/calculette.svg" alt="Calculette">
                     <p class="text-center text centerV d-none d-md-inline-block">Elaboration d’une calculatrice graphique pratique et intuitive.<br>
                         Disponible sur tous les moteurs de recherches et en application mobile.</p>
-                            <a class="btn btn-warning button center d-none d-md-inline-block" href="https://formation-dwwm.github.io/graphcalc-js/" target="_blank">voir le site</a>
-                            <a class="btn btn-warning button center d-inline-block d-md-none" data-toggle="modal" data-target="#exampleModal1">plus d'infos</a>
+                            <a class="btn btn-outline-info button center d-none d-md-inline-block" href="https://formation-dwwm.github.io/graphcalc-js/" target="_blank">voir le site</a>
+                            <a class="btn btn-outline-info button center d-inline-block d-md-none" data-toggle="modal" data-target="#exampleModal1">plus d'infos</a>
                         <!-- Modal -->
-                        <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <h5 class="modal-title" id="exampleModalLabel">Calculette graphique</h5>
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                      </button>
-                                    </div>
-                                    <div class="text-center"class="modal-body">
-                                            Elaboration d’une calculatrice graphique pratique et intuitive.<br>
-                                            Disponible sur tous les moteurs de recherches et en application mobile. 
-                                    </div>
-                                    <a class="text-center" href="https://formation-dwwm.github.io/graphcalc-js/">https://formation-dwwm.github.io/graphcalc-js/</a>
-                                    <div class="modal-footer">
-                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
+                        {% include modal.html
+                          label="exampleModal1"
+                          title="Calculette graphique"
+                          text= "Elaboration d’une calculatrice graphique pratique et intuitive.<br>
+                          Disponible sur tous les moteurs de recherches et en application mobile."
+                          link="https://formation-dwwm.github.io/graphcalc-js/"
+                          img="assets/img/CALCULETTE.png"
+                          description="Calculette graphique" %}
         </div>
         <div class="grid-container grid-container-md col-12 col-md-4">
                 <h2 class= "text-center title centerV">Présentation des terminaux</h2>
                     <img class="img-fluid photo" src="assets/img/terminaux.svg" alt="Terminaux">
                         <p class="text-center text centerV d-none d-md-inline-block">Présentation des principaux terminaux au travers du web statique.
                             Site internet de présentation fonctionnel et organisé.</p>
-                                <a class="btn btn-warning button center d-none d-md-inline-block" href="https://geoffray-buhler.github.io/Projet_markdown/" target="_blank">voir le site</a>
-                                <a class="btn btn-warning button center d-inline-block d-md-none" data-toggle="modal" data-target="#exampleModal2">plus d'infos</a>
+                                <a class="btn btn-outline-info button center d-none d-md-inline-block" href="https://geoffray-buhler.github.io/Projet_markdown/" target="_blank">voir le site</a>
+                                <a class="btn btn-outline-info center d-inline-block d-md-none" data-toggle="modal" data-target="#exampleModal2">plus d'infos</a>
                             <!-- Modal -->
-                          <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <h5 class="modal-title" id="exampleModalLabel">Présentation des terminaux</h5>
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                      </button>
-                                    </div>
-                                    <div class="text-center"class="modal-body">
-                                            Présentation des principaux terminaux au travers du web statique.
-                                            Site internet de présentation fonctionnel et organisé.
-                                    </div>
-                                    <a class="text-center" href="https://geoffray-buhler.github.io/Projet_markdown/">https://geoffray-buhler.github.io/Projet_markdown/</a>
-                                    <div class="modal-footer">
-                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
+
+                            {% include modal.html
+                              label="exampleModal2"
+                              title="Présentation des terminaux"
+                              text= "Présentation des principaux terminaux au travers du web statique.<br>
+                              Site internet de présentation fonctionnel et organisé."
+                              link="https://geoffray-buhler.github.io/Projet_markdown/"
+                              img="assets/img/CLI.png"
+                              description="Terminaux CLI" %}
         </div>
     </div>
 </div>
