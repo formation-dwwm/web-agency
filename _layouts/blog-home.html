@@ -14,7 +14,7 @@ layout: blog-default
             {% endif %}
 
             <div class="card-body">
-                <a href="{{ article.url | relative_url }}"><h5 class="card-title">{{ article.title | escape }}</h5></a>
+                <a href="{{ article.url | relative_url }}" class="card-article-title"><h5 class="card-title">{{ article.title | escape }}</h5></a>
                 <p class="card-text">{{ article.description | escape }}</p>
                 <p class="post-meta">
                     {%- if article.authors -%}
@@ -29,11 +29,13 @@ layout: blog-default
                         {{ article.date | date: date_format }}</span>
                     </time>
                 </p>
-                <p> 
-                    {%- if article.tags -%}
-                    <span class="badge badge-pill badge-secondary">tag</span>
-                    {%- endif -%}
-                </p>
+            
+                {%- if article.tags -%}
+                    {%- for tag in article.tags -%}
+                        <span class="badge badge-pill badge-secondary">{{ tag | escape }}</span>
+                    {%- endfor -%}
+                {%- endif -%}
+
             </div>
         </div>
 

@@ -3,7 +3,19 @@ font-family: 'Lato', sans-serif;
 background: map-get($theme-colors, "secondary");
 }
 
+//BLOG-NAVBAR
 .navbar-brand-text {
     font-family: 'Alfa Slab One', cursive;
 }
 
+//BLOG-HOME
+.card-article-title {
+    
+    color: black;
+
+    &:hover {
+        text-decoration: none;
+        color: black;
+    }
+
+}

@@ -5,7 +5,9 @@ description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ei
 date:   2019-10-16 10:00:00 +0200
 authors: "McDoughnut, Ricou"
 category: 
-tags: 
+tags:
+    - Terminaux
+    - Powershell
 cover_url: https://static.makeuseof.com/wp-content/uploads/2014/12/basic-powershell-commands-intro-670x335.png
 ---
 
