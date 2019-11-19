@@ -1,0 +1,45 @@
+---
+layout: blog-default
+---
+
+<main class="container">
+  <div class="row">
+
+    <div class="col-12 mb-3">
+      <h1 class="display-4">{{ page.title | escape }}</h1>
+      <time class="dt-published font-italic" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        Update: <span>
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          {{ page.date | date: date_format }}</span>
+      </time>
+    </div>
+
+    <article class="col-12 col-md-9">
+      <div>
+        {% if page.cover_url %}
+        <img src="{{ page.cover_url | relative_url }}" class="card-img-top mb-5"
+          alt="{{ page.title | escape }} article-cover-image">
+        {% endif %}
+
+
+
+        {{ content }}
+
+        <p>
+          {%- if page.tags -%}
+          <span class="badge badge-pill badge-secondary">tag</span>
+          {%- endif -%}
+        </p>
+      </div>
+    </article>
+
+    <div class="col-12 col-md-3 mb-3 border rounded">
+      <h3>About Author:</h3>
+      <p class="post-meta">
+        {%- if page.authors -%}
+        <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span
+            class="p-author h-card font-weight-bold" itemprop="name">{{ page.authors | escape }}</span></span>
+        {%- endif -%}</p>
+    </div>
+  </div>
+</main>
