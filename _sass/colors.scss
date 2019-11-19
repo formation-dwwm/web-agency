@@ -8,3 +8,6 @@ $theme-colors: (
 );
 
 
+@function color($colorName){
+  @return map-get($theme-colors, $colorName);
+}
