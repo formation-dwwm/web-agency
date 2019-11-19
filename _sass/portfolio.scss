@@ -1,10 +1,22 @@
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 20% 40% 32% 8%;
-  grid-template-areas: "title""photo""text""button";
-  height: calc(100vh - 100px);
+  grid-template-rows: 20% 70% 10%;
+  grid-template-areas: "title""photo""button";
+  height: 70vh;
 }
+
+@media screen and (min-width: 768px) {
+  .grid-container-md {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 40% 32% 8%;
+    grid-template-areas: "title""photo""text""button";
+    height: calc(100vh - 100px);
+  }
+}
+
+
 
 .centerV {
   margin-top: auto;
