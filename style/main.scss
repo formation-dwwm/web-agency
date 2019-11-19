@@ -5,9 +5,11 @@
 $contactLink: "{{"./assets/img/image11.png" | relative_url}}";
 $jumboBackgroundLink: "{{"./assets/img/Background/BgJumbo.jpg" | relative_url}}";
 
+@import "utilities";
 @import "minima";
 @import "colors";
 @import "navbar";
+@import "footer";
 @import "jumbo";
 @import "style-contact-form";
 @import "blog-style";
