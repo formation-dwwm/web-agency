@@ -1,0 +1,7 @@
+<div class="container-fluid">
+    <div class="row">
+        {%- for team in site.staff_members -%}
+            {% include card.html title=team.title excer=team.excer content=team.content iconPath=team.imgUrl socialIcons='assets/img/socialImgBlock.svg' %}
+        {%- endfor -%}
+    </div>
+</div>
