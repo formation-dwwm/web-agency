@@ -3,7 +3,7 @@
     background: url(../assets/img/bgCard.svg) no-repeat bottom right;
     // bottom right;
     // background-image: url(../assets/img/bgCard.svg);
-    background-size: auto auto;
+    background-size: contain;
     width: 100%;
     height: 100%;
 }

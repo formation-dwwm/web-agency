@@ -1,8 +1,19 @@
-<div class="container">
-
+<div class="container-fluid">
     <div class="row">
-        {%- for elt in site.services -%}
-        {% include card.html title=elt.title excer=elt.excer content=elt.content %}
+        {% assign rank= site.services | sort: "rank" %}
+
+        {%- for elt in rank -%}
+            {%  case elt.title %}
+                {% when "Vitrine" %}
+                    {% include card.html title=elt.title excer=elt.excer content=elt.content iconPath='assets/img/iconVitrineService-54x54.png' socialIcons='' %}
+                    <!-- {% include card.html title=elt.title excer=elt.excer content=elt.content iconPath='{{ "./assets/img/iconVitrineService-54x54.png" | relative_url }}' %} -->
+                {% when "Complexes" %}
+                    {% include card.html title=elt.title excer=elt.excer content=elt.content iconPath='assets/img/iconComplexService-54x54.png' socialIcons='' %}
+                    <!-- {% include card.html title=elt.title excer=elt.excer content=elt.content iconPath='{{ "./assets/img/iconComplexService-54x54.png" | relative_url }}' %} -->
+                {% else %}
+                    {% include card.html title=elt.title excer=elt.excer content=elt.content iconPath='assets/img/iconMobileService-54x54.png' socialIcons='' %}
+                    <!-- {% include card.html title=elt.title excer=elt.excer content=elt.content iconPath='{{ "./assets/img/iconMobileService-54x54.png" | relative_url }}' %} -->
+            {% endcase %}
         {%- endfor -%}
     </div>
 
