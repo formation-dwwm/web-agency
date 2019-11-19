@@ -5,9 +5,11 @@
 $contactLink: "{{"./assets/img/image11.png" | relative_url}}";
 $jumboBackgroundLink: "{{"./assets/img/Background/BgJumbo.jpg" | relative_url}}";
 
-@import "utilities";
+
 @import "minima";
+@import "utilities";
 @import "colors";
+@import "bootstrap-src/bootstrap";
 @import "navbar";
 @import "footer";
 @import "jumbo";
@@ -16,4 +18,5 @@ $jumboBackgroundLink: "{{"./assets/img/Background/BgJumbo.jpg" | relative_url}}"
 @import "portfolio";
 @import "about";
 @import "partners";
-@import "bootstrap-src/bootstrap";
+@import "card";
+
