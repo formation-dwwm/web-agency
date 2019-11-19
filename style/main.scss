@@ -5,9 +5,13 @@
 $contactLink: "{{"./assets/img/image11.png" | relative_url}}";
 $jumboBackgroundLink: "{{"./assets/img/Background/BgJumbo.jpg" | relative_url}}";
 
+
 @import "minima";
+@import "utilities";
 @import "colors";
+@import "bootstrap-src/bootstrap";
 @import "navbar";
+@import "footer";
 @import "jumbo";
 @import "style-contact-form";
 @import "portfolio";
@@ -17,4 +21,3 @@ $jumboBackgroundLink: "{{"./assets/img/Background/BgJumbo.jpg" | relative_url}}"
 @import "bootstrap-src/bootstrap";
 /* Important: this needs to be imported AFTER bootstrap (overrides) */
 @import "blog-style";
-
