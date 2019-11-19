@@ -1,16 +1,17 @@
-<header class="container-fluid mb-5">
+<header class="container-fluid mb-3 sticky-top">
 
     <!-- Image and text -->
-    <nav class="navbar navbar-light bg-dark row">
-        <div class="navbar-brand col-12 col-md-5 align-middle bg-info logo-bg" >
-            <a href="{{ "index.html" | relative_url }}"><img src="{{"./assets/img/logo-1.png" | relative_url}}" width="80" height="80"
-                class="d-inline-block align-top" alt="logo-DWWM#2"></a>
-            <a href="{{ "blog.html" | relative_url }}" class="navbar-brand text-secondary">Le blog officiel de<br/><span class="name">DWWM#2</span></a>
+    <nav class="row navbar navbar-dark bg-dark">
+        <div class="col-12 col-md-6 navbar-brand align-middle">
+            <a href="{{ "index.html" | relative_url }}" class="d-none d-md-inline-block"><img src="{{"./assets/img/logo-1.png" | relative_url}}"
+                    width="50" height="50" class="d-inline-block mr-2" alt="logo-DWWM#2"></a>
+            <a href="{{ "blog.html" | relative_url }}" class="navbar-brand text-secondary">
+                Le blog officiel de <span class="navbar-brand-text">DWWM#2</span></a>
         </div>
 
-        <form class="form-inline my-2 my-lg-0 col-12 col-md-6 justify-content-md-end">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        <form class="col-12 col-md-5 my-2 my-lg-0 justify-content-md-end d-flex flex-row nowrap">
+            <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-info  my-sm-0" type="submit"><i class="fas fa-search"></i></button>
         </form>
     </nav>
 

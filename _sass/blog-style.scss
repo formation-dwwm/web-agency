@@ -1,15 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap');
-
 body {
 font-family: 'Lato', sans-serif;
+background: map-get($theme-colors, "secondary");
 }
 
-.logo-bg {
-    border-radius: 50px;
-}
-
-.name {
+.navbar-brand-text {
     font-family: 'Alfa Slab One', cursive;
-    font-size: 2rem;
-
 }
+
