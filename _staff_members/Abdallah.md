@@ -1,5 +1,6 @@
 ---
 title: Abdallah
 excer: zephyr
-imgUrl: assets/img/Ab.jpg
+iconPath: assets/img/Ab.jpg
+socialIcons: assets/img/socialImgBlock.svg
 ---

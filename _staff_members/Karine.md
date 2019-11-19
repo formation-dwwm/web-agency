@@ -1,6 +1,7 @@
 ---
 title: Karine
 excer: Ka Rynh
-imgUrl: assets/img/IMG_3789.jpg
+iconPath: assets/img/IMG_3789.jpg
+socialIcons: assets/img/socialImgBlock.svg
 ---
 

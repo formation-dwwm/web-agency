@@ -1,6 +1,7 @@
 ---
 title: Marion
 excer: Mafarifionfon
-imgUrl: assets/img/Marion.jpg
+iconPath: assets/img/Marion.jpg
+socialIcons: assets/img/socialImgBlock.svg
 ---
 

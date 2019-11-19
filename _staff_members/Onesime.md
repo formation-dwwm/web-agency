@@ -1,6 +1,7 @@
 ---
 title: Onésime
 excer: Osi
-imgUrl: assets/img/Osi.jpg
+iconPath: assets/img/Osi.jpg
+socialIcons: assets/img/socialImgBlock.svg
 ---
 

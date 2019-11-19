@@ -1,6 +1,7 @@
 ---
 title: Eric
 excer: ricou
-imgUrl: assets/img/Ricou.jpg
+iconPath: assets/img/Ricou.jpg
+socialIcons: assets/img/socialImgBlock.svg
 ---
 

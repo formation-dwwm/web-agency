@@ -1,5 +1,6 @@
 ---
 title: Jean-Christophe
 excer: LiSplib
-imgUrl: assets/img/jc.png
+iconPath: assets/img/jc.png
+socialIcons: assets/img/socialImgBlock.svg
 ---

@@ -1,6 +1,7 @@
 ---
 title: Natthamon
 excer: mcdoughnut
-imgUrl: assets/img/Nat.jpg
+iconPath: assets/img/Nat.jpg
+socialIcons: assets/img/socialImgBlock.svg
 ---
 
