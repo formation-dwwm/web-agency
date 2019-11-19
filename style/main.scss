@@ -14,6 +14,7 @@ $jumboBackgroundLink: "{{"./assets/img/Background/BgJumbo.jpg" | relative_url}}"
 @import "about";
 @import "partners";
 @import "card";
+@import "floating";
 @import "bootstrap-src/bootstrap";
 /* Important: this needs to be imported AFTER bootstrap (overrides) */
 @import "blog-style";
