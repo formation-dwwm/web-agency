@@ -2,6 +2,10 @@ body{
     font-size: 20px;
 }
 
+h1{
+    text-shadow: 3px 3px 9px #28252f;
+}
+
 h2{
     font-size: 24px;
 }
@@ -24,19 +28,39 @@ h2{
 .timeline-icon:before{
     content: "";
     position: absolute;
-    width: 4px;
-    height: 100%;
-    background: color("secondary");
+    width: 5px;
+    height: calc(100% + 100px);
+    background: #343b41;
     top: 70px;
-    left: 49px;
+    left: 89px;
 }
 
-.timeline-iconup:after{
-    content: "";
-    position: absolute;
-    width: 4px;
-    height: 100%;
-    background: color("secondary");
-    top: -70px;
-    left: 49px;
+.chrono.row:last-child .timeline-icon:before{
+    width: 0px;
+    background: white;
+    height: 0;
+}
+
+@media screen and (max-width: 780px){
+    .timeline-icon:before{
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: calc(100% + 50px);
+        background: #343b41;
+        top: 70px;
+        left: 45px;
+    }
+}
+
+@media screen and (max-width: 1080px){
+    .timeline-icon:before{
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: calc(100% + 100px);
+        background: #343b41;
+        top: 70px;
+        left: 48px;
+    }
 }
