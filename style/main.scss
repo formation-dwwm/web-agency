@@ -7,17 +7,17 @@ $jumboBackgroundLink: "{{"./assets/img/Background/BgJumbo.jpg" | relative_url}}"
 
 
 @import "minima";
-@import "utilities";
 @import "colors";
+@import "utilities";
 @import "bootstrap-src/bootstrap";
 @import "navbar";
-@import "footer";
 @import "jumbo";
-@import "style-contact-form";
-@import "portfolio";
-@import "about";
-@import "partners";
 @import "card";
-@import "bootstrap-src/bootstrap";
+@import "portfolio";
+@import "partners";
+@import "about";
+@import "style-contact-form";
+@import "floating";
 /* Important: this needs to be imported AFTER bootstrap (overrides) */
 @import "blog-style";
+@import "footer";

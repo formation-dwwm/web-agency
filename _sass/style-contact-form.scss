@@ -1,9 +1,8 @@
-
 #after_submit {
-    color: grey bold;      
-    font-size: 2.5em;
+    color: #28252f;
+    font-size: 36px;
     text-align: center;
-    background-color: rgba(49, 43, 43, 0.26);
+    text-shadow: 3px 3px 9px #28252f;
 }
 
 .contact {
@@ -12,14 +11,30 @@
     background-position: center;
     background-size: cover;
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lato', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #C68F0C;
     
 }
 
-#submit_button {
-    font-family: 'Lato', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #FF9A19;
-    color: white;
+.required {
+    background-color: #0d0d0ddb;
+    padding: 0 5px 5px;
+}
 
+.__input {
+    box-sizing: border-box;
+    max-width: 100%;
+    min-width: 10%;
+}
+
+.__btn {
+    
+    border-radius: 0.3rem;
+    font-family: 'Lato', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-seri
+    background-color: #181715;
+    color: #C68F0C;
+    border: 1px solid transparent;
+    margin-bottom: 1px;
+    font-size: 1.2rem;
+  
 }
