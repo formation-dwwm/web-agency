@@ -20,18 +20,23 @@ layout: blog-default
                        
                         
                     {%- if article.authors -%}
-                   
-                    <!-- {% assign lastAuthor = article.authors|last %} -->
+                    {% assign lastAuthor = article.authors|last %}
+                    {%- assign variable = "" -%}
                     By:
-                        {%- for author in article.authors -%}
-                    <!-- {% if lastAuthor != author %}
-                    {% assign author = author | append: "," %}
-                    {% endif %} -->
-                    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                        <span itemprop="name" class="font-weight-bold"> {{ author | escape }} </span>
-                    </span>
+                    {%- for author in site.staff_members -%}
+                        {%- for authorId in article.authors -%}
+                            {% if author.sid == authorId %}
+                                <!-- -{% assign author = author | append: "," %} -->
+                                {%- if lastAuthor != author.sid -%}
+                                {{ variable = author.excer  | append: "," }}
+                                {%- endif -%}
+                                <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                                <span itemprop="name" class="font-weight-bold"> {{  author.excer | escape }} </span>
+                                </span>
+                            {% endif %}
                         {%- endfor -%}
-                    {%- endif -%}
+                    {%- endfor -%}
+                    {% endif %}        
 
                     <time class="dt-published font-italic" datetime="{{ article.date | date_to_xmlschema }}"
                         itemprop="datePublished">Update: <span>
