@@ -3,22 +3,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-3 my-auto">
-                    <img src="{{ include.iconPath }}" alt="icon">
+                    <img src="{{ include.parent.iconPath }}" alt="icon">
                 </div>
-                <div class="col-9">
-                    <p class="card-title h2">{{ include.title }}</p>
-                    <p class="card-text h3 ">
-                        {{ include.excer }}<br>
-                        {{ include.content | markdownify }}
+                <div class="col-9 my-auto">
+                    <p class="card-title h2 font__color__dark">{{ include.parent.title }}</p>
+                    <p class="card-text h3">
+                        <cite class="text-muted">{{ include.parent.excer }}</cite>
+                        {{ include.parent.description }}<br>
+                        {{ include.parent.content | markdownify }}
                     </p>
-                    {% if include.socialIcons != "" %}
-                    <p class="container">
-                        <p class="row justify-content-end">
-                            <p class="col-4 offset-8">
-                                <img src="{{ include.socialIcons }}" alt="icon">
+                    {% if include.parent.socialIcons != "" %}
+                        <p class="container">
+                            <p class="row justify-content-end">
+                                <p class="col-5 offset-7">
+                                    <img src="{{ include.parent.socialIcons }}" alt="icon">
+                                </p>
                             </p>
                         </p>
-                    </p>
                     {% endif %}
                 </div>
             </div>
