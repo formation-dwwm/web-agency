@@ -2,8 +2,8 @@
 # auto-generate css
 ---
 
-$contactLink: "{{"./assets/img/image11.png" | relative_url}}";
-$jumboBackgroundLink: "{{"./assets/img/Background/BgJumbo.jpg" | relative_url}}";
+$contactLink: "{{ './assets/img/image11.png' | relative_url }}";
+$jumboBackgroundLink: "{{ '/assets/img/Background/BgJumbo.jpg' | relative_url }}";
 
 @import "minima";
 @import "colors";
