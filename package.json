@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/formation-dwwm/web-agency/issues"
   },
-  "homepage": "https://github.com/formation-dwwm/web-agency#readme"
+  "homepage": "https://github.com/formation-dwwm/web-agency#readme",
+  "dependencies": {
+    "simple-jekyll-search": "^1.7.3"
+  }
 }
