@@ -2,7 +2,7 @@
 layout: blog-default
 ---
 
-<main class="container">
+<main class="container blog-post">
   <div class="row">
 
     <div class="col-12 mb-3">
@@ -14,14 +14,12 @@ layout: blog-default
       </time>
     </div>
 
-    <article class="col-12 col-md-9">
+    <article class="col-12 col-md-8">
       <div>
         {% if page.cover_url %}
         <img src="{{ page.cover_url | relative_url }}" class="card-img-top mb-5"
           alt="{{ page.title | escape }} article-cover-image">
         {% endif %}
-
-
 
         {{ content }}
 
@@ -33,13 +31,17 @@ layout: blog-default
       </div>
     </article>
 
-    <div class="col-12 col-md-3 mb-3 border rounded">
+    <div class="author col-12 col-md-4 mb-3 border rounded">
       <h3>About Author:</h3>
-      <p class="post-meta">
-        {%- if page.authors -%}
-        <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span
-            class="p-author h-card font-weight-bold" itemprop="name">{{ page.authors | escape }}</span></span>
-        {%- endif -%}</p>
+      <p class="post-meta">        
+          {%- for author in site.staff_members -%}
+            {%- for authorID in page.authors -%}
+              {%- if authorID == author.sid -%}
+                {% include card.html title=author.title excer=author.excer content=author.content iconPath=author.imgUrl %}
+              {%- endif -%}
+            {%- endfor -%}
+          {%- endfor -%}
+      </p>
     </div>
   </div>
 </main>

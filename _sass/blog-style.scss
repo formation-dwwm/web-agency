@@ -7,3 +7,16 @@ background: map-get($theme-colors, "secondary");
     font-family: 'Alfa Slab One', cursive;
 }
 
+.author{
+    background-color: rgb(255, 205, 238);
+    max-height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.card{
+    background-color: rgb(255, 205, 238);
+    max-width: 100%;
+    padding-left: 0px;
+    margin: 0px;
+}
