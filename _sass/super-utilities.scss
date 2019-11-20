@@ -1,0 +1,7 @@
+.section__bg__dark {
+    background-color: color("secondary");
+}
+
+.title__shadow{
+    @include text-shadow-b;
+}
