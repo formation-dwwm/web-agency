@@ -39,11 +39,21 @@
         font-weight: 300;
         line-height: 1.2;
     }
+    .display-6 {
+        font-size: 2.2rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
 }
 
 @media screen and (min-width: 640px) {
     .display-5 {
         font-size: 4.5rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+    .display-6 {
+        font-size: 4.2em;
         font-weight: 300;
         line-height: 1.2;
     }
