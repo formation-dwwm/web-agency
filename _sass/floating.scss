@@ -1,4 +1,16 @@
-
+@keyframes blop{
+	0%{
+		transform:rotate(0turn);
+		transform:rotateY(0deg);
+	}
+	50%{
+		transform:rotate(1turn);
+		transform:rotateY(0deg);
+	}
+	75%{
+		transform:rotateY(360deg);
+	}
+}
 .label-container{
 	position:fixed;
 	bottom:48px;
@@ -52,6 +64,10 @@ a.float + div.label-container {
 a.float:hover + div.label-container{
   visibility: visible;
   opacity: 1;
+}
+
+a.float:hover .floating__logo{
+	animation:blop 2s infinite;
 }
 
 .containter__button{
