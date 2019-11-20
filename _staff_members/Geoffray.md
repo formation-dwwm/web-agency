@@ -1,5 +1,8 @@
 ---
 title: Geoffray
+excer: Griffont
+iconPath: assets/img/Geof.jpg
+socialIcons: assets/img/socialImgBlock.svg
 excer: Jumbotron Maker
 imgUrl: assets/img/Geof.jpg
 description: Tête dans les nuages
