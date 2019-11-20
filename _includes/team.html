@@ -1,9 +1,11 @@
-<div id="team" id="services" class="landingPage-bg-dark">
-    <div class="h1 text-center">TEAM</div>
+<div id="team" id="services" class="section__bg__dark">
+    <div class="h1 text-center">
+        <span class="title__shadow">TEAM</span>
+    </div>
     <div class="container-fluid">
         <div class="row justify-content-around">
             {%- for team in site.staff_members -%}
-            {% include card.html parent=team %}
+                {% include card.html parent=team %}
             {%- endfor -%}
         </div>
     </div>

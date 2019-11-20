@@ -5,16 +5,17 @@
                 <div class="col-3 my-auto">
                     <img src="{{ include.parent.iconPath }}" alt="icon">
                 </div>
-                <div class="col-9">
-                    <p class="card-title h2">{{ include.parent.title }}</p>
-                    <p class="card-text h3 ">
-                        {{ include.parent.excer }}<br>
+                <div class="col-9 my-auto">
+                    <p class="card-title h2 font__color__dark">{{ include.parent.title }}</p>
+                    <p class="card-text h3">
+                        <cite class="text-muted">{{ include.parent.excer }}</cite>
+                        {{ include.parent.description }}<br>
                         {{ include.parent.content | markdownify }}
                     </p>
                     {% if include.parent.socialIcons != "" %}
                         <p class="container">
                             <p class="row justify-content-end">
-                                <p class="col-5 offset-8">
+                                <p class="col-5 offset-7">
                                     <img src="{{ include.parent.socialIcons }}" alt="icon">
                                 </p>
                             </p>

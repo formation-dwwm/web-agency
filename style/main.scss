@@ -8,6 +8,8 @@ $jumboBackgroundLink: "{{ '/assets/img/Background/BgJumbo.jpg' | relative_url }}
 @import "minima";
 @import "colors";
 @import "utilities";
+@import "super-utilities";
+@import "bootstrap-src/bootstrap";
 @import "navbar";
 @import "jumbo";
 @import "style-contact-form";
