@@ -5,6 +5,6 @@ imgUrl: assets/img/IMG_3789.jpg
 description: Mieux vaut viser la perfection et la manquer, plutôt que de viser la médiocrité et l'atteindre.
 linkedin: http://linkedin.com/in/karine-nerhot-632a58110
 github: https://github.com/HysteriaKa
-
+sid: 83010-07-08
 ---
 

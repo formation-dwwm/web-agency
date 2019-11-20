@@ -2,8 +2,9 @@
 title: Natthamon
 excer: mcdoughnut
 imgUrl: assets/img/Nat.jpg
-Description: Gardienne de la paix
-Linkedin: https://fr.linkedin.com/in/natthamonkharoubi
+description: Gardienne de la paix
+linkedin: https://fr.linkedin.com/in/natthamonkharoubi
 github: https://github.com/natthamonng
+sid: 83010-07-06
 ---
 
