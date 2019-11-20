@@ -24,7 +24,7 @@
 	display:table-cell;
 	vertical-align:middle;
 	color:#333;
-	opacity:0.5;
+	opacity:0.8;
 }
 
 .float{
@@ -52,4 +52,8 @@ a.float + div.label-container {
 a.float:hover + div.label-container{
   visibility: visible;
   opacity: 1;
+}
+
+.containter__button{
+	opacity: 0.7;
 }
