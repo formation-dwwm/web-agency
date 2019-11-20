@@ -1,4 +1,9 @@
-*, *::before, *::after {
+body {
 font-family: 'Lato', sans-serif;
-/*font-family: 'Alfa Slab One', cursive;*/
+background: map-get($theme-colors, "secondary");
 }
+
+.navbar-brand-text {
+    font-family: 'Alfa Slab One', cursive;
+}
+
