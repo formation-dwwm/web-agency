@@ -1,5 +1,8 @@
 ---
 title: Eric
+excer: ricou
+iconPath: assets/img/Ricou.jpg
+socialIcons: assets/img/socialImgBlock.svg
 excer: Ricou
 imgUrl: assets/img/Ricou.jpg
 description: A coeur vaillant, rien d'impossible

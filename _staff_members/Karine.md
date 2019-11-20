@@ -1,5 +1,8 @@
 ---
 title: Karine
+excer: Ka Rynh
+iconPath: assets/img/IMG_3789.jpg
+socialIcons: assets/img/socialImgBlock.svg
 excerc: The ripper
 imgUrl: assets/img/IMG_3789.jpg
 description: Mieux vaut viser la perfection et la manquer, plutôt que de viser la médiocrité et l'atteindre.
