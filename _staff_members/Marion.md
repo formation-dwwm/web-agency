@@ -5,7 +5,7 @@ description: JukeBox de la formation DWWM v2.0 au top niveau du sommet du monde,
 github: https://github.com/Mafarifironfon
 iconPath: assets/img/Marion.jpg
 socialIcons: assets/img/socialImgBlock.svg
-imgUrl: assets/img/Marion.jpg
 sid: 83010-07-05
+rank: 1
 ---
 
