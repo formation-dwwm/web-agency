@@ -28,6 +28,10 @@ jQuery(function() {
       }
       event.preventDefault();
       var query = $("#search_box").val(); // Get the value for the text field
+        // When serach box is blank, return nothing
+        if (query == ""){
+          return;
+        }
       var results = window.idx.search(query); // Get lunr to perform a search
       display_search_results(results); // Hand the results off to be displayed
     });

@@ -2,9 +2,10 @@
 <html lang="{{ page.lang | default: site.lang | default: "fr" }}">
 {%- include blog-head.html -%}
 
-<body>
+<body class="blog-body bg-secondary">
     {%- include blog-header.html -%}
-    
+    <!-- {%- include blog-search-results.html -%} -->
+
     {{ content }}
     
     {%- include footer.html -%}
