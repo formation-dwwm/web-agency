@@ -13,7 +13,6 @@
     text-align: center;
     font-family: 'Lato', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #C68F0C;
-    
 }
 
 .required {
@@ -21,7 +20,16 @@
     padding: 0 5px 5px;
 }
 
-
-.contact textarea{
+.contact textare
     min-height: 280px;
+}
+
+.shadowBox{
+    box-shadow: 0 5px 5px #333;
+    opacity: 0.8;
+}
+
+textarea::placeholder {
+    text-align: center;
+    color: white !important;
 }
