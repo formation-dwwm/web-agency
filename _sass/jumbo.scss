@@ -7,7 +7,6 @@
 }
 
 .jumbo {
-    overflow: hidden;
     height: 100vh;
     background-image: url($jumboBackgroundLink);
     background-position: center;
@@ -31,4 +30,12 @@
 
 .h-33 {
     height: 33%;
+
+#particles-js{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    pointer-events: none;
 }
