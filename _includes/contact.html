@@ -2,24 +2,28 @@
 {% comment %} TODO: Remove from this include and link from main.sass {% endcomment %}
 <link rel="stylesheet" type="text/css" href="{{ "assets/main.css" | relative_url }}">
 </link>
-{% comment %} End TODO {% endcomment %}
+
 
 <div id="after_submit">CONTACT</div>
 <form class="contact" id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <label class="required mt-3" for="name">votre nom:</label><br />
-        <input id="name" class="__input form-control my-3-2" name="name" type="text" value="" size="40" /><br />
-        <span id="name_validation" class="error_message"></span>
-        <label class="required" for="email">votre email:</label><br />
-        <input id="email" class="__input form-control " name="email" type="text" value="" size="40" /><br />
-        <span id="email_validation" class="error_message"></span>
-        <label class="required" for="message">votre message:</label><br />
-        <textarea id="message" class="__input form-control" name="message" rows="9" cols="40"></textarea><br />
-        <span id="message_validation" class="error_message"></span>
-      </div>
+  <div class="form-group row px-4  ">
+
+    <div class="d-flex flex-column justify-content-center mt-6 mx-auto col-12 col-md-4 w-100 ">
+      <label class="required mt-4" for="name">votre nom:</label><br />
+      <input id="name" class="__input form-control mt-6 my-3-2" name=je"name" type="text" value="" size="40" /><br />
+      <span id="name_validation" class="error_message"></span>
+      <label class="required mt-4" for="email">votre email:</label><br />
+      <input id="email" class="__input form-control mt-6 " name="email" type="text" value="" size="40" /><br />
+      <span id="email_validation" class="error_message"></span> 
+       
     </div>
+    
+    <div class="col-12 col-md-8">
+      <label class="required" for="message">votre message:</label><br />
+      <textarea id="message" class="form-control p-2 w-100" placeholder="Votre message ici"></textarea><br />
+      <span id="message_validation" class="error_message"></span>
+    </div>
+
   </div>
   <button type="button" class="btn btn-info btn-lg mb-4">Envoyer</button>
 </form>
