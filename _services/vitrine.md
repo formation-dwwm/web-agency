@@ -6,4 +6,4 @@ socialIcons: ''
 rank: 1
 ---
 
-We can use jekyll technologie to generate such pages
+Jekyll generator technologie
