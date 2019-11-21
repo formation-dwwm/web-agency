@@ -4,49 +4,51 @@ layout: blog-default
 
 <div class="container">
     <div class="row">
+
         {%- for article in site.articles -%}
 
         <div class="card col-12 shadow p-3 mb-3 bg-white rounded" style="width: 18rem;">
 
             {% if article.cover_url %}
-            <a href="{{ article.url | relative_url }}"><img src="{{ article.cover_url | relative_url }}" class="card-img-top"
-                alt="{{ article.title | escape }} article-cover-image"></a>
+            <a href="{{ article.url | relative_url }}"><img src="{{ article.cover_url | relative_url }}"
+                    class="card-img-top" alt="{{ article.title | escape }} article-cover-image"></a>
             {% endif %}
 
             <div class="card-body">
-                <a href="{{ article.url | relative_url }}" class="card-article-title"><h5 class="card-title">{{ article.title | escape }}</h5></a>
+                <a href="{{ article.url | relative_url }}" class="card-article-title">
+                    <h5 class="card-title">{{ article.title | escape }}</h5>
+                </a>
+
                 <p class="card-text">{{ article.description | escape }}</p>
+
                 <p class="post-meta">
-                       
-                        
-                    {%- if article.authors -%}
-                   
-                    <!-- {% assign lastAuthor = article.authors|last %} -->
-                    By:
-                        {%- for author in article.authors -%}
-                    <!-- {% if lastAuthor != author %}
-                    {% assign author = author | append: "," %}
-                    {% endif %} -->
+                {%- if article.authors -%}
+                By:
+                    {%- for author in site.staff_members -%}
+                        {%- for authorId in article.authors -%}
+                            {%- if authorId == author.sid -%}
                     <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                        <span itemprop="name" class="font-weight-bold"> {{ author | escape }} </span>
+                        <span itemprop="name" class="font-weight-bold"> {{ author.excer | escape }} </span>
                     </span>
+                            {%- endif -%}
                         {%- endfor -%}
-                    {%- endif -%}
+                    {%- endfor -%}
+                {%- endif -%}
 
                     <time class="dt-published font-italic" datetime="{{ article.date | date_to_xmlschema }}"
                         itemprop="datePublished">Update: <span>
-                        {%- assign date_format = article.minima.date_format | default: "%b %-d, %Y" -%}
-                        {{ article.date | date: date_format }}</span>
+                            {%- assign date_format = article.minima.date_format | default: "%b %-d, %Y" -%}
+                            {{ article.date | date: date_format }}</span>
                     </time>
                 </p>
-            
+
                 {%- if article.tags -%}
                     {%- for tag in article.tags -%}
                         <span class="badge badge-pill badge-secondary mr-1">{{ tag | escape }}</span>
                     {%- endfor -%}
                 {%- endif -%}
-
             </div>
+            
         </div>
 
         {%- endfor -%}

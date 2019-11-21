@@ -9,7 +9,8 @@ background: map-get($theme-colors, "secondary");
 }
 
 //BLOG-HOME
-.card-article-title {
+// .card-article-title 
+a {
     color: black;
 
     &:hover {
