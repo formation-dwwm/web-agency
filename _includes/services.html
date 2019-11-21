@@ -1,20 +1,13 @@
-<div class="container-fluid">
-    <div class="row">
-        {% assign rank= site.services | sort: "rank" %}
+<div class="section__bg__dark">
+    <div class="h1 text-center title__shadow">SERVICES</div>
+    <div class="container-fluid">
+        <div class="row justify-content-around">
+            {% assign rank= site.services | sort: "rank" %}
 
-        {%- for elt in rank -%}
-            {%  case elt.title %}
-                {% when "Vitrine" %}
-                    {% include card.html title=elt.title excer=elt.excer content=elt.content iconPath='assets/img/iconVitrineService-54x54.png' socialIcons='' %}
-                    <!-- {% include card.html title=elt.title excer=elt.excer content=elt.content iconPath='{{ "./assets/img/iconVitrineService-54x54.png" | relative_url }}' %} -->
-                {% when "Complexes" %}
-                    {% include card.html title=elt.title excer=elt.excer content=elt.content iconPath='assets/img/iconComplexService-54x54.png' socialIcons='' %}
-                    <!-- {% include card.html title=elt.title excer=elt.excer content=elt.content iconPath='{{ "./assets/img/iconComplexService-54x54.png" | relative_url }}' %} -->
-                {% else %}
-                    {% include card.html title=elt.title excer=elt.excer content=elt.content iconPath='assets/img/iconMobileService-54x54.png' socialIcons='' %}
-                    <!-- {% include card.html title=elt.title excer=elt.excer content=elt.content iconPath='{{ "./assets/img/iconMobileService-54x54.png" | relative_url }}' %} -->
-            {% endcase %}
-        {%- endfor -%}
+            {%- for elt in rank -%}
+            {% include card.html parent=elt %}
+            {%- endfor -%}
+        </div>
+
     </div>
-
 </div>

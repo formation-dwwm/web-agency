@@ -1,7 +1,9 @@
 {% comment %} Needed for integration waiting for sass merge... {% endcomment %}
 {% comment %} TODO: Remove from this include and link from main.sass {% endcomment %}
-<link rel="stylesheet" type="text/css" href="{{ "assets/main.css" | relative_url }}">
-</link>
+
+<!-- Je l'es desactivée car ca fait doublons avec le Sass que on a fait plus haut GEOFFRAY-->
+<!-- <link rel="stylesheet" type="text/css" href="{{ "assets/main.css" | relative_url }}">
+</link> -->
 {% comment %} End TODO {% endcomment %}
 
 <div id="after_submit">CONTACT</div>
@@ -9,17 +11,17 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <label class="required" for="name">votre nom:</label><br />
-        <input id="name" class="__input form-control" name="name" type="text" value="" size="40" /><br />
+        <label class="required mt-3" for="name">votre nom:</label>
+        <input id="name" class="__input form-control my-3" name="name" type="text" value="" size="40" />
         <span id="name_validation" class="error_message"></span>
-        <label class="required" for="email">votre email:</label><br />
-        <input id="email" class="__input form-control " name="email" type="text" value="" size="40" /><br />
+        <label class="required" for="email">votre email:</label>
+        <input id="email" class="__input form-control my-3" name="email" type="text" value="" size="40" />
         <span id="email_validation" class="error_message"></span>
-        <label class="required" for="message">votre message:</label><br />
-        <textarea id="message" class="__input form-control" name="message" rows="9" cols="40"></textarea><br />
+        <label class="required" for="message">votre message:</label>
+        <textarea id="message" class="__input form-control my-3" name="message" rows="9" cols="40"></textarea>
         <span id="message_validation" class="error_message"></span>
       </div>
     </div>
   </div>
-  <button type="button" class="__btn btn-info btn-lg">Envoyer</button>
+  <button type="button" class="btn btn-info btn-lg mb-4">Envoyer</button>
 </form>

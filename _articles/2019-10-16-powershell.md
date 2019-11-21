@@ -3,9 +3,12 @@ layout: blog-post
 title:  "Powershell"
 description: "PowerShell est un interpréteur de ligne de commande et langage de script qui repose sur la technologie .NET."
 date:   2019-10-16 10:00:00 +0200
-authors: "McDoughnut, Ricou"
-category: 
-tags: 
+authors: 
+    - 83010-07-06
+    - 83010-07-07
+tags:
+    - Terminaux
+    - Powershell
 cover_url: https://static.makeuseof.com/wp-content/uploads/2014/12/basic-powershell-commands-intro-670x335.png
 ---
 
