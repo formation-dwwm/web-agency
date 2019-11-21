@@ -1,11 +1,11 @@
 {% comment %} Needed for integration waiting for sass merge... {% endcomment %}
 {% comment %} TODO: Remove from this include and link from main.sass {% endcomment %}
+
 <link rel="stylesheet" type="text/css" href="{{ "assets/main.css" | relative_url }}">
 </link>
-
-
-<div id="after_submit">CONTACT</div>
+<div class="text-center title__font__param title__shadow">CONTACT</div>
 <form class="contact" id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+
   <div class="form-group row px-4">
 
     <div class="d-flex flex-column justify-content-around mt-6 mx-auto col-12 col-md-4 w-100 ">
@@ -17,10 +17,7 @@
         <input id="name" class="form-control bg-dark text-primary shadowBox" type="text" size="40" name="name">
       </div>
       <span id="name_validation" class="error_message"></span>
-
-      {% comment %} <input id="name" class="__input form-control floating-label-wrap   bg-dark text-primary" name="name" type="text"
-        value="Votre nom :" size="40" />
-      <span id="name_validation" class="error_message"></span> {% endcomment %}
+      
 <div class="input-group mb-2">
         <div class="input-group-prepend">
           <div class="input-group-text">Votre email: </div>
@@ -28,8 +25,6 @@
         <input id="name" class="form-control bg-dark text-primary shadowBox" type="text" size="40" name="name">
         <span id="email_validation" class="error_message"></span>
       </div>
-
-     
     </div> 
     <div class="col-12 col-md-8">
       <textarea id="message" class="form-control p-2 w-100 bg-dark text-primary shadowBox" type="text"
