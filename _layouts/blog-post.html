@@ -32,16 +32,16 @@ layout: blog-default
     </article>
 
     <div class="author col-12 col-md-4 mb-3 border rounded">
-      <h3>About Author:</h3>
-      <p class="post-meta">        
+      <h3>About author(s):</h3>
+      <div>        
           {%- for author in site.staff_members -%}
             {%- for authorID in page.authors -%}
               {%- if authorID == author.sid -%}
-                {% include card.html title=author.title excer=author.excer content=author.content iconPath=author.imgUrl %}
+                {% include card.html parent=author %}
               {%- endif -%}
             {%- endfor -%}
           {%- endfor -%}
-      </p>
+      </div>
     </div>
   </div>
 </main>

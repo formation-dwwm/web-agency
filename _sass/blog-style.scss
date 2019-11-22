@@ -8,15 +8,15 @@ background: map-get($theme-colors, "secondary");
 }
 
 .author{
-    background-color: rgb(255, 205, 238);
+    text-align: center;
     max-height: 100%;
     padding: 0px;
     margin: 0px;
 }
 
-.card{
-    background-color: rgb(255, 205, 238);
+.blog-post .card{
     max-width: 100%;
     padding-left: 0px;
     margin: 0px;
+    width: initial;
 }
