@@ -1,7 +1,18 @@
-<div class="container-fluid search-result">
-    <div class="row justify-content-end">
-        <div class="col-12 col-md-4">
-            <ul id="search_results" class="results-marker text-center"></ul>
+<div id="exampleModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Résultat(s) de recherche</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <ul id="search_results" class="results-marker"></ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Fermer</button>
+            </div>
         </div>
     </div>
 </div>

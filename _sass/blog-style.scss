@@ -1,5 +1,5 @@
 .blog-body {
-font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 //BLOG-NAVBAR
@@ -8,7 +8,7 @@ font-family: 'Lato', sans-serif;
 }
 
 //BLOG-HOME
-.card-article-title {
+.card-article-title h5{
     color: black;
 
     &:hover {
@@ -17,9 +17,16 @@ font-family: 'Lato', sans-serif;
     }
 }
 
-.search-result {
-    background: color(primary);
-}
+//BLOG-MODAL-RESULTS
 .results-marker {
-    list-style-type: none;
+    list-style-type: circle;
+
+    & a {
+        color: black;
+    }
+
+    &:hover {
+        text-decoration: none;
+        color: black;
+    }
 }
