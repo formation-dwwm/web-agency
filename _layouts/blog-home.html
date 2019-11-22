@@ -30,6 +30,7 @@ layout: blog-default
                     <span itemprop="author" itemscope itemtype="http://schema.org/Person">
                         <span itemprop="name" class="font-weight-bold"> {{ author.excer | escape }} </span>
                     </span>
+                    {% unless forloop.last %},{% endunless %}
                             {%- endif -%}
                         {%- endfor -%}
                     {%- endfor -%}
