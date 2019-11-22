@@ -20,3 +20,21 @@ font-family: 'Lato', sans-serif;
     margin: 0px;
     width: initial;
 }
+
+.blog-post {
+    .bg__card__image {
+        background-size: cover;
+    }
+    .card-title {
+        font-size: 2.5em;
+    }
+
+    cite {
+        font-size: 2em;
+    }
+    p.display-7-1 {
+        font-size: 1em;
+    }
+
+
+}
