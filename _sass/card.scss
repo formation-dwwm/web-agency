@@ -1,4 +1,4 @@
-.bgCardImage {
+.bg__card__image {
     display: block;
     background: url(../assets/img/bgCard.svg) no-repeat bottom right;
     background-size: contain;
@@ -6,10 +6,16 @@
     height: 100%;
 }
 
-.font__color__dark {
-    color: color("dark");
-}
-
 .card__size{
     width: 14rem;
+    border-radius: 20px;
+}
+
+.card__shadow{
+    @include border-shadow-t;
+}
+
+.card__parent__padding{
+    margin: 5px;
+    // padding: 5px;
 }

@@ -1,24 +1,35 @@
 {% comment %} Needed for integration waiting for sass merge... {% endcomment %}
 {% comment %} TODO: Remove from this include and link from main.sass {% endcomment %}
+
 <link rel="stylesheet" type="text/css" href="{{ "assets/main.css" | relative_url }}">
 </link>
-{% comment %} End TODO {% endcomment %}
-
-<div id="after_submit">CONTACT</div>
+<div class="text-center title__font__param title__shadow">CONTACT</div>
 <form class="contact" id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <label class="required mt-3" for="name">votre nom:</label><br />
-        <input id="name" class="__input form-control my-3-2" name="name" type="text" value="" size="40" /><br />
-        <span id="name_validation" class="error_message"></span>
-        <label class="required" for="email">votre email:</label><br />
-        <input id="email" class="__input form-control " name="email" type="text" value="" size="40" /><br />
-        <span id="email_validation" class="error_message"></span>
-        <label class="required" for="message">votre message:</label><br />
-        <textarea id="message" class="__input form-control" name="message" rows="9" cols="40"></textarea><br />
-        <span id="message_validation" class="error_message"></span>
+
+  <div class="form-group row px-4">
+
+    <div class="d-flex flex-column justify-content-around mt-6 mx-auto col-12 col-md-4 w-100 ">
+
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">Votre nom: </div>
+        </div>
+        <input id="name" class="form-control bg-dark text-primary shadowBox" type="text" size="40" name="name">
       </div>
+      <span id="name_validation" class="error_message"></span>
+      
+<div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">Votre email: </div>
+        </div>
+        <input id="name" class="form-control bg-dark text-primary shadowBox" type="text" size="40" name="name">
+        <span id="email_validation" class="error_message"></span>
+      </div>
+    </div> 
+    <div class="col-12 col-md-8">
+      <textarea id="message" class="form-control p-2 w-100 bg-dark text-primary shadowBox" type="text"
+        placeholder="Votre message ici"></textarea><br />
+      <span id="message_validation" class="error_message"></span>
     </div>
   </div>
   <button type="button" class="btn btn-info btn-lg mb-4">Envoyer</button>

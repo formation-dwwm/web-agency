@@ -1,18 +1,22 @@
-<div class="card card__size col-12 col-md-6 col-lg-4 mb-2">
-    <div class="card-body bgCardImage text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-3 my-auto">
-                    <img src="{{ include.parent.iconPath | relative_url }}" alt="icon">
-                </div>
-                <div class="col-9 my-auto">
-                    <p class="card-title h2 font__color__dark">{{ include.parent.title }}</p>
-                    <p class="card-text h3">
-                        <cite class="text-muted">{{ include.parent.excer }}</cite>
-                        {{ include.parent.description }}<br>
-                        {{ include.parent.content | markdownify }}
-                    </p>
-                    {% if include.parent.socialIcons != "" %}
+<!-- <div class="card__parent__padding"> -->
+    <div class="card card__size col-12 col-md-6 mb-2 card__shadow">
+        <div class="card-body bg__card__image text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 my-auto">
+                        <img class="ml-1 mr-3" src="{{ include.parent.iconPath }}" alt="icon">
+                    </div>
+                    <div class="col-9 my-auto">
+                        <p class="card-title display-5-1 font__color__dark">{{ include.parent.title }}</p>
+                        <cite class="text-muted  display-6-1">{{ include.parent.excer }}</cite> <br>
+                        <p class="display-7-1"></p>
+                        {{ include.parent.description }}
+                        </p>
+                        <p>
+                            <!-- font-weight-light -->
+                            {{ include.parent.content | markdownify }}
+                        </p>
+                        {% if include.parent.socialIcons != "" %}
                         <p class="container">
                             <p class="row justify-content-end">
                                 <p class="col-5 offset-7">
@@ -20,9 +24,11 @@
                                 </p>
                             </p>
                         </p>
-                    {% endif %}
+                        {% endif %}
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+<!-- </div> -->
+<!-- <span class="d-inline-block text-truncate" style="max-width: 150px;"></span> -->
