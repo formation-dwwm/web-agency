@@ -1,0 +1,29 @@
+.contact {
+    box-sizing: border-box;
+    background-image: url($contactLink);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Lato', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #C68F0C;
+}
+
+.required {
+    background-color: #0d0d0ddb;
+    padding: 0 5px 5px;
+}
+
+.contact textarea {
+    min-height: 280px;
+}
+
+.shadowBox{
+    box-shadow: 0 5px 5px #333;
+    opacity: 0.8;
+}
+
+textarea::placeholder {
+    text-align: center;
+    color: white !important;
+}
+

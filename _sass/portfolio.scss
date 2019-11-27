@@ -1,0 +1,67 @@
+.portfolio {
+  background: color(secondary);
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 70% 10%;
+    grid-template-areas: "title""photo""button";
+    height: 70vh;
+  }
+
+  @media screen and (min-width: 768px) {
+    .grid-container-md {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 20% 40% 32% 8%;
+      grid-template-areas: "title""photo""text""button";
+      height: calc(100vh - 100px);
+    }
+  }
+
+    .centerV {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .center {
+    margin: auto;
+  }
+
+  .title {
+    font-size: 24px;
+    grid-area: title;
+    font-weight: bold;
+  }
+
+  .photo {
+    grid-area: photo;
+    margin: auto;
+    max-height: 100%;
+  }
+
+  .text {
+    grid-area: text;
+  }
+
+  a.btn {
+    &:visited {
+      color: color(info);
+    }
+
+    &:hover {
+      color: white;
+    } 
+  } /* end a.btn      */
+  a:visited{
+    color: color(danger);
+  }
+
+  .modalImage{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px grey;
+    margin-bottom: 10px;
+  }
+}   /* end .portfolio */

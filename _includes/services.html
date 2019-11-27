@@ -1,0 +1,12 @@
+<div id="services" class="section__bg__dark">
+    <div class="text-center title__font__param title__shadow">SERVICES</div>
+    <div class="container-fluid">
+        <div class="row justify-content-around">
+            {% assign rank= site.services | sort: "rank" %}
+
+            {%- for elt in rank -%}
+            {% include card.html parent=elt %}
+            {%- endfor -%}
+        </div>
+    </div>
+</div>

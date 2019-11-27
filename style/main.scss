@@ -1,0 +1,24 @@
+---
+# auto-generate css
+---
+
+$contactLink: "{{ './assets/img/image11.png' | relative_url }}";
+$jumboBackgroundLink: "{{ '/assets/img/Background/BgJumbo.jpg' | relative_url }}";
+
+
+@import "minima";
+@import "colors";
+@import "utilities";
+@import "css-utilities";
+@import "bootstrap-src/bootstrap";
+@import "navbar";
+@import "jumbo";
+@import "card";
+@import "portfolio";
+@import "partners";
+@import "about";
+@import "style-contact-form";
+@import "floating";
+/* Important: this needs to be imported AFTER bootstrap (overrides) */
+@import "blog-style";
+@import "footer";

@@ -1,0 +1,102 @@
+.section__bg__dark {
+    background-color: color("secondary");
+}
+
+.title__font_param {
+    font-size: 50px;
+    color: color("dark");
+}
+
+.title__shadow {
+    @include text-shadow-b;
+}
+
+@media screen and (max-width: 640px) {
+    // initial s media jumbo.scss
+    .display-5 {
+        font-size: 2.5rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    // initial xl media jumbo.scss
+    .display-5 {
+        font-size: 4.5rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+}
+
+@media (min-width: 576px) {
+    .display-5-1 {
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+    .display-6-1 {
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+    .display-7-1 {
+        font-size: 0.3rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+}
+
+@media (min-width: 768px) { 
+    .display-5-1 {
+        font-size: 1.7rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+    .display-6-1 {
+        font-size: 1.4rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+    .display-7-1 {
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+}
+
+@media (min-width: 992px) { 
+    .display-5-1 {
+        font-size: 2.4rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+    .display-6-1 {
+        font-size: 2.1rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+    .display-7-1 {
+        font-size: 1.4rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+}
+
+@media (min-width: 1200px) { 
+    .display-5-1 {
+        font-size: 3.1rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+    .display-6-1 {
+        font-size: 2.8rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+    .display-7-1 {
+        font-size: 2.1rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+ }
