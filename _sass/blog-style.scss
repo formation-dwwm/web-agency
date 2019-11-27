@@ -1,9 +1,32 @@
-body {
-font-family: 'Lato', sans-serif;
-
+.blog-body {
+    font-family: 'Lato', sans-serif;
 }
 
+//BLOG-NAVBAR
 .navbar-brand-text {
     font-family: 'Alfa Slab One', cursive;
 }
 
+//BLOG-HOME
+.card-article-title h5{
+    color: black;
+
+    &:hover {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+//BLOG-MODAL-RESULTS
+.results-marker {
+    list-style-type: circle;
+
+    & a {
+        color: black;
+    }
+
+    &:hover {
+        text-decoration: none;
+        color: black;
+    }
+}
